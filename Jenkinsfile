@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('vcs') {
             steps {
-                git url: 'https://github.com/imsimranmohanty/spring-framework-new.git,
+                git url: 'https://github.com/imsimranmohanty/spring-framework-new.git',
                     branch: 'master'
             }
         }
