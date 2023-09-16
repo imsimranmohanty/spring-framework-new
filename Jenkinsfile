@@ -28,7 +28,7 @@ pipeline {
             }
         }
 		stage('deploy on k8s') {
-		    agent { label 'K8S_DEPLOY' }
+		    agent { label 'JDK-17-MVN-3.6.3' }
 			steps {
 			    sh 'kubectl apply -f deployment.yaml'
 				sh 'kubectl apply -f service.yaml'
